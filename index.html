@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -17,7 +17,9 @@
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
-         
+
+          
+            
           <textarea
             readonly
             id="password"
@@ -25,9 +27,27 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+
+        <div class="option">
+          <label>Desired length</label>
+          <input type="number" id="length" min="8" max="128" value="10">
+        </div>
+        
+        <!-- <label for="symbols">Lowercase</label>
+        <input type="checkbox" id="symbols" checked />
+
+        <label for="symbols">Uppercase</label>
+        <input type="checkbox" id="symbols" checked />
+        
+        <label for="symbols">Numeric</label>
+        <input type="checkbox" id="symbols" checked />
+
+        <label for="symbols">Special Characters</label>
+        <input type="checkbox" id="symbols" checked /> -->
+
         <label class="container"id="lowercase">Lowercase
           <input type="checkbox" checked="checked">
-          <span class="checkmark"  ></span>
+          <span class="checkmark"></span>
         </label>
         
         <label class="container">Uppercase
@@ -49,6 +69,6 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="Assets/js/script.js"></script>
   </body>
 </html>
