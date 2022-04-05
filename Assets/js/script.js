@@ -1,5 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+// Added global variable where the user input will be pushed to
 var wordMass = "";
 
 // Write password to the #password input
@@ -54,11 +55,15 @@ function writePassword() {
       return special[Math.floor(Math.random() * special.length)];
   }
 
+  // Validates to make sure user inputted yes to at least one of the parameteres
+
   selectCharacterTypes()
   while (characterTypes.length === 0) {
     alert("Input yes to at least one parameter")
     selectCharacterTypes();
   }
+
+  // Creates password length based on user input
 
   for (let i = 0; i < pwdLength; i++) {
     wordMass += characterTypes[Math.floor(Math.random() * characterTypes.length)]();
@@ -90,6 +95,8 @@ var special = "~`!@#$%^&*()-_=+[]{'}/?>.<,;:|";
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword)
 
+
+// Getting individual selections, validating they're accepted, and returns a boolean
 
 var getLength = function length() {
   let ans = prompt("How long should the password be?", "8-128");
