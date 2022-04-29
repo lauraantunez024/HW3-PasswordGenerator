@@ -27,7 +27,7 @@ Behind the scenes, javascript converts the responses into boolean values. It tak
 
 ### Link to deployed application:
 
-https://lauraantunez024.github.io/HW3-PasswordGenerator/
+https://lauraantunez024.github.io/PasswordGenerator/
 
 ### Credits 
 
