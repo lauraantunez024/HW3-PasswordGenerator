@@ -1,4 +1,4 @@
-# Homework 3 Password generator
+# Password generator
 
 ## Project Goals
 
